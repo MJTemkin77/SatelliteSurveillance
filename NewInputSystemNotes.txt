@@ -1,0 +1,26 @@
+New Input System
+Open Package using the Package Manager
+Set the Packages Filter to Unity Registry which is a change from  Packages In Project
+Click Yes in the dialog that will enable the backends.
+Close the Package Manager dialog after Unity restarts.
+
+Open Project Settings  (Main Menu -> Edit -> Project Settings)
+In Project Settings choose Input System Package from the left sidebar menu.
+
+
+Choose the Game Object that will reads Input in it's script.
+Add a Player Input Component.
+Click the Create Actions button. You are prompted to save this file which has the default name NewInputSystemDebugging.inputactions. 
+
+There will be an error message: "NullReferenceException: SerializedObject of SerializedProperty has been Disposed". You can ignore this message as it will go away at ___
+
+Click the Selection button to the extreme right of  Actions under Player Input. Pick the file that you created in the previous step. Double-click on the file in the Actions field, this will bring up the Input Actions editor where you can add, remove and customize input.  However at this time you don't have to change anything in that screen.
+
+If the Game Object that the Player Input was added to does not have a script then add one now.
+
+Select the NewInputSystemDebugging item in Project Assets. You can click on Edit Asset if you want to return to the Input Actions editor. You can also click the Generate C# class (optional) which will enable Intellisense in using the Inputs in your script. 
+
+You can always discard this file by going into the Inspector for NewInputSystemDebugging  and clicking the Revert button.
+
+Go to the editor to write your script.
+
